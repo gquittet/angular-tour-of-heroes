@@ -1,0 +1,7 @@
+<h2 class="text-2xl">My Heroes</h2>
+<ul class="heroes unselectable">
+  <li *ngFor="let hero of heroes" routerLink="/heroes/{{ hero.id }}">
+    <span class="badge">{{ hero.id }}</span>
+    <span class="name">{{ hero.name }}</span>
+  </li>
+</ul>

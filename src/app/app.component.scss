@@ -1,0 +1,67 @@
+@import "~src/styles/mixins.scss";
+@import "~src/styles/utils.scss";
+
+h1 {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: $green;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: darken($green, 5);
+  color: white;
+
+  a {
+    width: 10rem;
+    margin-right: 4rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.content {
+  margin: 0 auto;
+  max-width: $w-sm;
+}
+
+@media (min-width: $md) {
+  .content {
+    max-width: $w-xl;
+  }
+}
+
+@media (min-width: $xl) {
+  nav a {
+    width: 15rem;
+    margin-right: 10rem;
+  }
+
+  .content {
+    max-width: $w-2xl;
+  }
+}
+
+@media (min-width: $xxl) {
+  .content {
+    max-width: $w-4xl;
+  }
+}
+
+.not_found_button {
+  margin: 5rem auto auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+}

@@ -1,0 +1,33 @@
+@import "~src/styles/variables";
+@import "~src/styles/mixins";
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $gray;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  @include font-size("2xl");
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+a.clear {
+  width: 6rem;
+}
+
+.messages {
+  text-align: center;
+  display: flex;
+  padding: 0.25rem;
+  margin: 0.5rem auto auto auto;
+  justify-content: space-evenly;
+  width: 20rem;
+  border: 1px solid $gray;
+}

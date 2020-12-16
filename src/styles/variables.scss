@@ -1,0 +1,37 @@
+// Colors
+$yellow: #e9c46a;
+$orange: #f4a261;
+$red: #e76f51;
+$green: #2a9d8f;
+$gray: #264653;
+
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+$w-xs: 20rem;
+$w-sm: 24rem;
+$w-md: 28rem;
+$w-lg: 32rem;
+$w-xl: 36rem;
+$w-2xl: 48rem;
+$w-3xl: 48rem;
+$w-4xl: 56rem;
+$w-5xl: 64rem;
+$w-6xl: 72rem;
+$w-7xl: 80rem;
+$w-full: 100%;
+$w-min: min-content;
+$w-max: max-content;
+$w-prose: 65ch;
+
+// Size
+$breakpoints: (
+  "sm": $sm,
+  "md": $md,
+  "lg": $lg,
+  "xl": $xl,
+  "2xl": $xxl,
+);

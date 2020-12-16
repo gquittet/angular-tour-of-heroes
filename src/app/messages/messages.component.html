@@ -1,0 +1,17 @@
+<div *ngIf="messageService.messages.length">
+  <div class="title">
+    <h2>Messages</h2>
+    <a class="gq_button clear" (click)="messageService.clear()">
+      <fa-icon [icon]="['fas', 'trash']"></fa-icon>
+
+      clear
+    </a>
+  </div>
+  <div
+    class="messages unselectable border-collapse"
+    *ngFor="let message of messageService.messages"
+  >
+    <div class="border border-black w-1/2">{{ message.split(":")[0] }}</div>
+    <div class="border border-black w-1/2">{{ message.split(":")[1] }}</div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div *ngIf="hero">
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div class="container">
+    <label class="name"
+      >Name: <input [(ngModel)]="hero.name" type="text" placeholder="name"
+    /></label>
+  </div>
+</div>
+
+<a class="gq_button back" (click)="goBack()">
+  <fa-icon [icon]="['fas', 'arrow-left']"></fa-icon>
+  back
+</a>
